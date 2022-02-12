@@ -3,6 +3,8 @@ console.log('Phonebook server is about to start...')
 const express = require('express')
 const app = express()
 
+app.use(express.static('react-ui'))
+
 app.use(express.json())
 
 const morgan = require('morgan')
