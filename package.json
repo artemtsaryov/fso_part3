@@ -6,7 +6,7 @@
     "start": "node index.js",
     "dev": "nodemon index.js",
     "test": "echo \"Error: no test specified\" && exit 1",
-    "build-deploy": "rm -rf react-ui && cd ../fso_part2/phonebook/ && npm run build && cp -r build ../../fso_part3/react-ui && cd ../../fso_part3/ && git commit -am build-deploy && git push heroku master"
+    "build-deploy": "rm -rf react-ui && cd ../fso_part2/phonebook/ && npm run build && cp -r build ../../fso_part3/react-ui && cd ../../fso_part3/ && git add . && git commit -m build-deploy && git push heroku master"
   },
   "author": "Artem Tsarev",
   "license": "MIT",
