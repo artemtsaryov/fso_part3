@@ -33,7 +33,7 @@ else {
     name: process.argv[3],
     number: process.argv[4]
   })
-  
+
   person.save().then(result => {
     console.log('person saved!')
     mongoose.connection.close()
